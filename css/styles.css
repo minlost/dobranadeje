@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw auto;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)), url("C:/Users/Vaclav Vlcek/Desktop/node/Dobra Nadeje/images/uh1.jpg");
+    /* background-image: url("C:/Users/Vaclav Vlcek/Desktop/node/Dobra Nadeje/images/uh1.jpg"); */
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+
+    background: rgba(51, 170, 51, .4)
+}
+
+.hero .btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+}
+
+.bottom{
+  text-align: center;
+  background-color: white;
+  height: 30px;
+
+}
+
+.bottom h2 {
+    color: black;
+    font-size: 17px;
+    padding-top: 4px;
+    font-style: italic;
+}
+
+
+.mapa{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 500px;
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+main div {
+   overflow: hidden;
+   text-align: center;
+}
+
+#ornament{
+  width: 30%;
+  height: 30%;
+}
+
+.tabule {
+  position: absolute;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.tabule img{
+  width: 20%;
+  height: auto;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+.leftarticle{
+  text-align: right;
+  color: white;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+#box1 {
+  display: inline-block;
+  width: 600px;
+  height: 350px;
+  margin: 10px auto;
+  margin-top: 30px;
+  overflow: auto;
+  border: 0.5px solid #808080;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+
+
+}
+
+#box2 {
+  display: inline-block;
+  width: 600px;
+  height: 350px;
+  margin: 10px auto;
+  margin-top: 30px;
+  overflow: auto;
+  border: 0.5px solid #808080;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+
+
+}
+
+#footer {
+   position:relative;
+   text-align: center;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+
+
+main h3 {
+ overflow: hidden;
+ text-align: center;
+ font-size: 2.5em;
+}
+
+main p{
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 1.5em;
+}
+
+.center{
+  text-align: center;
+
+}
+
+.adress{
+  font-size: 1em;
+}
+
+
+    /* RESPONSIVE*/
+
+
+
+@media only screen and (min-width: 1200px){
+main h3:before,
+main h3:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+main h3:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+main h3:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .hero h1  {
+    font-size: 3em;
+  }
+  .hero h2  {
+    font-size: 1rem;
+  }
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:40.25%;
+    position:relative;
+    height:0;
+  }
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    position:absolute;
+  }
+  main p{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1em;
+  }
+  #ornament{
+    width: 60%;
+    height: 60%;
+  }
+  #erb{
+    width: 30%;
+    height: 30%;
+  }
+
+}
+}
+@media only screen and (max-width: 1200px){
+  .tabule{
+    display: none;
+  }
